@@ -9,7 +9,7 @@ schema:
     - 发明人 王永民先生
     - 方案制作人 Federo <federo666@outlook.com>
   description: |
-    五笔字型新世纪版＋汉语拼音混合輸入。
+    五笔字型新世纪版＋汉语拼音混合输入。
   dependencies:
     - pinyin_simp
 
