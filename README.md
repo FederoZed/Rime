@@ -13,7 +13,11 @@
 
 ## 使用 Plum 安装
 
-本方案的拼音配置依赖 `stroke` 笔画方案。首次安装时执行：
+本方案的拼音配置依赖 `stroke` 笔画方案，安装时需要同时指定该依赖。
+
+### macOS / Linux
+
+首次安装时执行：
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/rime/plum/master/rime-install \
@@ -25,6 +29,40 @@ curl -fsSL https://raw.githubusercontent.com/rime/plum/master/rime-install \
 ```bash
 bash ~/Library/Rime/plum/rime-install stroke FederoZed/Rime
 ```
+
+### Windows / 小狼毫
+
+Windows 推荐使用 `rime-install.bat`。为了让安装器执行本仓库的 `recipe.yaml`，需要先安装 Git for Windows（其中包含 Git Bash）：
+
+```bat
+rime-install.bat git
+```
+
+安装完成后，关闭并重新打开 CMD 或 PowerShell，再执行：
+
+```bat
+rime-install.bat stroke FederoZed/Rime
+```
+
+在 PowerShell 中，如果当前目录下的脚本不能直接执行，可以使用：
+
+```powershell
+.\rime-install.bat stroke FederoZed/Rime
+```
+
+也可以在 Git Bash 中直接运行无扩展名的 Bash 安装脚本：
+
+```bash
+bash rime-install stroke FederoZed/Rime
+```
+
+Windows 安装注意事项：
+
+- 官方 Bash 安装脚本名为 `rime-install`，不是 `rime-install.sh`。
+- 安装 Git for Windows 后，`rime-install.bat` 会调用完整的 Plum Bash 安装器，从而执行 `recipe.yaml`。
+- 没有 Git Bash 时，批处理可能退回 ZIP 安装模式；该模式不会执行 `recipe.yaml`，不建议用于本方案。
+- 不建议通过 WSL 安装，因为 WSL 的 Linux 路径与小狼毫的 `%APPDATA%\Rime` 用户目录不同。
+- 默认安装位置为 `%APPDATA%\Rime`。
 
 安装完成后，从 Rime 菜单执行“重新部署”。配方会把以下方案加入方案列表：
 
