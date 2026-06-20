@@ -1,0 +1,8 @@
+/build
+/*.userdb
+/sync
+user.yaml
+/plum
+/installation.yaml
+/trash
+.DS_Store

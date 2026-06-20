@@ -1,0 +1,8 @@
+---
+name: custom_phrase
+version: "1.0"
+sort: by_weight
+use_preset_vocabulary: false
+...
+# 词条、编码、权重之间使用 Tab
+联系货主未接通	lhw	4000

@@ -1,0 +1,24 @@
+# default.custom.yaml
+# encoding: utf-8
+# 作者: federo <federo666@outlook.com>
+
+patch:
+  switcher: # 切换输入法的配置块
+    caption: 〔方案选择〕
+    hotkeys: # 快捷键；可以设置多个快捷键，这样每个快捷键都生效; grave 是键盘上的 `
+      - "Control+grave"
+
+  schema_list:
+    - schema: pinyin_simp # 袖珍简化字拼音
+    - schema: wubixinshiji_pinyin # 新世纪五笔·拼音
+
+  menu/page_size: 9 # 候选词个数
+
+  ascii_composer/good_old_caps_lock: true # 若为 true， Caps 只切换大小写
+  ascii_composer/switch_key:
+    Caps_Lock: commit_code # Caps 键
+    Shift_L: commit_code # 左 Shift，切换中英文
+    Shift_R: commit_code # 右 Shift，切换中英文
+    Control_L: noop # 左 Control，屏蔽该切换键
+    Control_R: noop # 右 Control，屏蔽该切换键
+

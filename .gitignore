@@ -1,0 +1,31 @@
+# macOS 自动生成的目录元数据
+.DS_Store
+
+# Rime 部署后生成的编译产物，可通过重新部署恢复
+/build/
+
+# Rime 根据用户输入习惯生成的用户词典数据库
+/*.userdb/
+/*.userdb.*
+
+# Rime 跨设备同步生成的数据
+/sync/
+
+# Syncthing 用于识别同步目录的本地标记
+/.stfolder/
+
+# 东风破（Plum）是独立的包管理仓库，不纳入当前配置仓库
+/plum/
+
+# 当前设备的安装标识和运行状态，不适合在不同设备间共享
+/installation.yaml
+/user.yaml
+
+# 运行及诊断日志
+*.log
+
+# OpenCC 根据文本词典生成的二进制缓存
+/opencc/*.ocd2
+
+# 本项目中用于暂存废弃配置的目录
+/trash/

@@ -1,0 +1,6 @@
+# 配置与词典均按 UTF-8 文本管理，并统一使用 LF 换行符。
+# 这样可以避免不同系统提交时产生整文件换行差异。
+*.yaml text eol=lf
+*.txt text eol=lf
+.gitignore text eol=lf
+.stignore text eol=lf
