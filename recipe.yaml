@@ -1,0 +1,25 @@
+# encoding: utf-8
+---
+recipe:
+  Rx: wubixinshiji-pinyin
+  description: >-
+    安装新世纪五笔·拼音和袖珍简化字拼音方案
+
+# 只安装输入方案运行所需的源文件，不复制个人状态和编译产物。
+install_files:
+  - wubixinshiji_pinyin.schema.yaml
+  - wubixinshiji.dict.yaml
+  - pinyin_simp.schema.yaml
+  - pinyin_simp.dict.yaml
+  - custom_phrase.dict.yaml
+  - opencc/emoji.json
+  - opencc/emoji_category.txt
+  - opencc/emoji_word.txt
+
+# 在保留用户已有方案的基础上，把本项目的两个方案追加到方案列表。
+patch_files:
+  default.custom.yaml:
+    - patch/+:
+        schema_list/+:
+          - schema: wubixinshiji_pinyin
+          - schema: pinyin_simp

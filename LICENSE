@@ -1,0 +1,59 @@
+Rime 新世纪五笔·拼音方案许可说明
+=================================
+
+本仓库不是单一来源的软件包。不同文件适用不同的许可和权利声明。
+
+一、项目原创配置、文档及维护内容
+--------------------------------
+
+除下文另有说明外，由 Federo 编写或新增的配置、文档、Plum 配方和自定义短语结构，采用 Apache License 2.0：
+
+  https://www.apache.org/licenses/LICENSE-2.0
+
+Copyright 2025-2026 Federo <federo666@outlook.com>
+
+在遵守 Apache License 2.0 的前提下，可以使用、复制、修改和分发这些原创内容。相关内容按“原样”提供，不附带任何明示或默示担保。
+
+二、袖珍简化字拼音
+------------------
+
+以下文件源自 Rime 的 rime-pinyin-simp 项目，并按 Apache License 2.0 提供：
+
+  pinyin_simp.schema.yaml
+  pinyin_simp.dict.yaml
+
+上游项目：
+
+  https://github.com/rime/rime-pinyin-simp
+
+其中方案文件作者为 Gong Chen；词典派生自 Android Pinyin IME。对这些文件所作的本地修改仍须保留上游版权、许可和归属说明。
+
+三、Emoji / OpenCC 数据
+-----------------------
+
+以下文件源自 Rime 的 rime-emoji 项目，并按 GNU Lesser General Public License version 3（LGPL-3.0）提供：
+
+  opencc/emoji.json
+  opencc/emoji_category.txt
+  opencc/emoji_word.txt
+
+上游项目及完整许可证：
+
+  https://github.com/rime/rime-emoji
+  https://www.gnu.org/licenses/lgpl-3.0.html
+
+四、新世纪五笔词典
+------------------
+
+  wubixinshiji.dict.yaml
+
+该文件的现有来源说明称，其由 Federo 从《五笔字型大一统普及版+专业版新世纪整合词库》转换并格式化；原始五笔字型及所列词库作者为王永民先生。
+
+现有源文件没有附带可核验的开放源代码许可证。因此，本仓库不主张拥有原始五笔编码体系或原始词库的版权，也不对该第三方内容授予超出原始权利人许可范围的额外权利。使用者和再分发者应自行确认并遵守原始权利人的授权条件。
+
+五、商标与免责声明
+------------------
+
+Rime、中州韵、鼠须管、小狼毫以及其他名称可能是其各自权利人的商标。本仓库与相关权利人之间不存在未经声明的隶属或担保关系。
+
+除适用许可证明确要求外，本仓库内容均按“原样”提供，不承担适销性、特定用途适用性或不侵权的默示担保。

@@ -1,0 +1,36 @@
+项目维护
+========
+
+Federo <federo666@outlook.com>
+  - Rime 方案整合与维护
+  - 新世纪五笔词典转换和格式化
+  - Plum 配方与项目文档
+
+新世纪五笔
+==========
+
+王永民先生
+  - 五笔字型发明人
+  - 当前词典头所列《五笔字型大一统普及版+专业版新世纪整合词库》作者
+
+袖珍简化字拼音
+==============
+
+Gong Chen <chen.sst@gmail.com>
+  - pinyin_simp.schema.yaml
+
+Android Pinyin IME contributors
+  - pinyin_simp.dict.yaml 的上游数据来源
+
+Emoji / OpenCC
+==============
+
+雪齋 <leoyoontsaw@gmail.com>
+Kunki Chou
+  - rime-emoji 方案及 OpenCC Emoji 数据
+
+相关项目
+========
+
+Rime Developers
+  - Rime 输入法引擎、Plum 配方管理器及相关基础方案
