@@ -6,3 +6,5 @@ user.yaml
 /installation.yaml
 /trash
 .DS_Store
+/.git
+/opencc/*.ocd2

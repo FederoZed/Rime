@@ -11,6 +11,9 @@
 name: pinyin_simp
 version: "0.1"
 sort: by_weight
+# 导入公共自定义短语词典，让拼音方案也能使用相同的快捷短语。
+import_tables:
+  - custom_phrase
 ...
 
 鼥	ba	0
