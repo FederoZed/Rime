@@ -51,6 +51,7 @@ engine:
     - script_translator@pinyin # 独立拼音通道，支持整句输入和用户词典学习
     - table_translator # 使用五笔编码查询汉字、词组
   filters:
+    - reverse_lookup_filter@wubi_lookup # 给字词候选补充五笔编码，恢复以拼音查五笔
     - simplifier@emoji_suggestion
     - uniquifier # 在 Emoji 转换后合并五笔与拼音的重复候选
 
@@ -82,6 +83,13 @@ pinyin:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
+
+wubi_lookup:
+  dictionary: wubixinshiji # 根据候选文字查询五笔词典中的编码
+  tags: [abc] # 仅处理字母输入的字词候选，不处理标点
+  overwrite_comment: true # 用五笔编码替换原注释，避免拼音提示遮住反查结果
+  comment_format:
+    - "xform/^/〔五笔〕/" # 明确标注编码来源；词典没有对应词条时不添加提示
 
 punctuator:
   __include: default:/punctuator # 先加载默认标点表，再覆盖反引号，保留其他标点
