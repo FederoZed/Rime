@@ -8,3 +8,7 @@ use_preset_vocabulary: false
 Windows	win	4000
 # 输入 dun 时提供顿号候选；字段之间必须使用 Tab。
 、	dun	4000
+
+，	dou	4000
+
+。	ju	4000
