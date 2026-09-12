@@ -5,7 +5,6 @@ sort: by_weight
 use_preset_vocabulary: false
 ...
 # 词条、编码、权重之间使用 Tab
-联系货主未接通	lhw	4000
 Windows	win	4000
 # 输入 dun 时提供顿号候选；字段之间必须使用 Tab。
 、	dun	4000
