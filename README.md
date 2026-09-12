@@ -5,7 +5,9 @@
 ## 功能
 
 - 使用新世纪五笔输入汉字和词组。
-- 在五笔方案中使用反引号 `` ` `` 开启拼音反查。
+- 在五笔方案中直接混输拼音，支持整句输入和用户词典学习，五笔基础优先级更高。
+- 合并五笔与拼音的重复候选；拼音与独立拼音方案共享用户词典。
+- 反引号原样输出，不再触发拼音反查。
 - 提供独立的袖珍简化字拼音方案。
 - 五笔和拼音方案共享 `custom_phrase.dict.yaml` 自定义短语。
 - 通过 OpenCC 提供 Emoji 候选。
@@ -106,7 +108,7 @@ opencc/emoji_word.txt
 
 ## 主要文件
 
-- `wubixinshiji_pinyin.schema.yaml`：新世纪五笔与拼音反查方案。
+- `wubixinshiji_pinyin.schema.yaml`：新世纪五笔与拼音混打方案。
 - `wubixinshiji.dict.yaml`：新世纪五笔主词典。
 - `pinyin_simp.schema.yaml`：袖珍简化字拼音方案。
 - `pinyin_simp.dict.yaml`：简体拼音词典。

@@ -1,0 +1,19 @@
+# 仅移除鼠须管内置的应用默认英文设置，让方案决定初始中英文状态。
+# 保留默认 inline、no_inline 显示兼容设置及其他应用适配。
+patch:
+  app_options/com.apple.Spotlight/ascii_mode: null
+  app_options/com.alfredapp.Alfred/ascii_mode: null
+  app_options/com.runningwithcrayons.Alfred-2/ascii_mode: null
+  app_options/com.blacktree.Quicksilver/ascii_mode: null
+  app_options/com.apple.Terminal/ascii_mode: null
+  app_options/com.googlecode.iterm2/ascii_mode: null
+  app_options/org.vim.MacVim/ascii_mode: null
+  app_options/com.apple.dt.Xcode/ascii_mode: null
+  app_options/com.barebones.textwrangler/ascii_mode: null
+  app_options/com.macromates.TextMate.preview/ascii_mode: null
+  app_options/com.github.atom/ascii_mode: null
+  app_options/com.microsoft.VSCode/ascii_mode: null
+  app_options/com.sublimetext.2/ascii_mode: null
+  app_options/org.gnu.Aquamacs/ascii_mode: null
+  app_options/org.gnu.Emacs/ascii_mode: null
+  app_options/co.zeit.hyper/ascii_mode: null
